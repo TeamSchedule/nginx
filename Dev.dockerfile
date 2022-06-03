@@ -3,4 +3,5 @@ FROM nginx:${NGINX_VERSION}-alpine
 
 RUN rm -v /etc/nginx/nginx.conf
 COPY ./nginx.conf /etc/nginx/
+EXPOSE 80
 RUN mkdir /nginx
